@@ -12,8 +12,8 @@ This code uses the DMA of PWM, so it is no need to take much CPU resource to dri
 System Workbench for STM32 (SW4STM32) + STM32CubeMX + STM32CubeF4
 
 ## Schematic
-<img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Schematic.png" width="500px">
+<img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Schematic.png" width="1200px">
 
 ## Pinout
-<img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Pinout.png" width="500px">
+<img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Pinout.png" width="600px">
 
