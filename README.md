@@ -14,7 +14,3 @@ System Workbench for STM32 (SW4STM32) + STM32CubeMX + STM32CubeF4
 ## Schematic
 <img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Schematic.png" width="1200px">
 
-[](
-## Pinout
-<img src="https://github.com/y2kblog/PL9823_STM32/blob/master/images/Pinout.png" width="600px">
-)
