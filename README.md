@@ -5,8 +5,11 @@ This code uses the DMA of PWM, so it is no need to take much CPU resource to dri
 <http://y2kblog.seesaa.net/>
 )
 
-## Example MCU board
+## MCU board
 [NUCLEO-F411RE](http://www.st.com/en/evaluation-tools/nucleo-f411re.html)
+
+## LED
+[PL9823-F5](http://akizukidenshi.com/catalog/g/gI-08411/)
 
 ## IDE
 System Workbench for STM32 (SW4STM32) + STM32CubeMX + STM32CubeF4
