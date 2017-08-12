@@ -16,6 +16,8 @@ extern "C" {
 /* Exported enum tag ---------------------------------------------------------*/
 /* Exported struct/union tag -------------------------------------------------*/
 /* Exported variables --------------------------------------------------------*/
+uint32_t PL9823_Delay_ms;
+
 /* Exported function prototypes ----------------------------------------------*/
 void PL9823_init(void);
 void PL9823_resetAllColor(void);

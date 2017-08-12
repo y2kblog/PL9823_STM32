@@ -99,6 +99,22 @@ int main(void)
   /* USER CODE BEGIN 2 */
     printf("\r\n***** Program start! *****\r\n");
     PL9823_init();
+
+    PL9823_setColor(0, 0xFF, 0x00, 0x00);
+    PL9823_startOutput();
+    HAL_Delay(500);
+
+    PL9823_setColor(0, 0x00, 0xFF, 0x00);
+    PL9823_startOutput();
+    HAL_Delay(500);
+
+    PL9823_setColor(0, 0x00, 0x00, 0xFF);
+    PL9823_startOutput();
+    HAL_Delay(500);
+
+    PL9823_setColor(0, 0xFF, 0xFF, 0xFF);
+    PL9823_startOutput();
+    HAL_Delay(500);
   /* USER CODE END 2 */
 
   /* Infinite loop */

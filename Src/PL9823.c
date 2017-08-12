@@ -16,13 +16,15 @@
 /* Private enum tag ----------------------------------------------------------*/
 /* Private struct/union tag --------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-static volatile uint16_t PL9823_data[24 * PL9823_QTY + PL9823_PWM_RESET_DUMMY];
+static volatile uint16_t PL9823_data[24 * PL9823_QTY + 2*PL9823_PWM_RESET_DUMMY];
 
 /* Private function prototypes -----------------------------------------------*/
 
 /* Exported functions --------------------------------------------------------*/
 void PL9823_init(void)
 {
+    PL9823_Delay_ms = ceil((PL9823_T0H+PL9823_T1H) * (float)(sizeof(PL9823_data) / sizeof(PL9823_data[0])) * 1000.0f);
+
     // Validate value of PL9823_PWM_RESET_DUMMY
     size_t buf = (size_t) (ceil((PL9823_RESET_TIME / (PL9823_T0H + PL9823_T1H))));
     if (PL9823_PWM_RESET_DUMMY != buf)
@@ -31,6 +33,10 @@ void PL9823_init(void)
         Error_Handler();
     }
     PL9823_resetAllColor();
+
+    // LED Off
+    PL9823_startOutput();
+    HAL_Delay(PL9823_Delay_ms);
 }
 
 void PL9823_resetAllColor(void)
